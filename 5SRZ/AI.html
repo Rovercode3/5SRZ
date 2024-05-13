@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5SRZ</title>
+    <link rel="stylesheet" href="AI.css">
+    <link rel="shortcut icon" href="logo-white.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="AI.html">
+            <img src="logo.png" alt="5SRZ Logo">
+            <span>5 STAR RECORDZ</span>
+            </a>
+        </div>
+        <div class="container">
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="Aboutus.html">About Us</a>
+                    <a href="Contactus.html">Contact Us</a>
+                    <a href="Whatwedo.html">What We Do</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+            <div class="slideshow">
+                <img class="slide active" src="4.jpeg" alt="Image 1">
+                <img class="slide" src="22.jpeg" alt="Image 2">
+                <img class="slide" src="3.jpeg" alt="Image 3">
+            </div>
+            <div class="main-content">
+                <h1 class="animated-text">WELCOME TO 5 STAR RECORDZ</h1>
+                <p class="animated-text">Discover the best music and support talented artists</p>
+                <a href="Artists.html" class="btn">ARTISTS</a>
+                <a href="Aboutus.html" class="btn">ABOUT US</a>
+            </div>
+    </main>
+    <script>
+            let slideIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+            carousel();
+
+            function carousel() {
+                slides.forEach((slide) => {
+                    slide.classList.remove('active');
+                });
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].classList.add('active');
+                setTimeout(carousel, 10000); // Change image every 10 seconds
+            }
+    </script>
+    <script src="AI.js"></script>
+    <footer>
+        <p>&copy; 5SRZ. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

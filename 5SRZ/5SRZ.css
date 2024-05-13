@@ -1,0 +1,33 @@
+body{
+    background-image: url(blank-folded-paper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* .container{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-image: url(back2.jpeg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.2;
+} */
+
+.image{
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-left: 42%;
+    margin-top: 100px;
+}
+
+/* .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: auto;
+    opacity: 0.5;
+} */
